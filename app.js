@@ -20,7 +20,15 @@ if (command === 'add') {
 } else if (command === 'list') {
   notes.getAll();
 } else if (command === 'read') {
-  notes.getNote(argv.title);
+  let noteExpanded = notes.getNote(argv.title);
+  if (noteExpanded) {
+    console.log(`${noteExpanded.title} found`);
+    console.log('-----------')
+    console.log(`Title: ${noteExpanded.title}`);
+    console.log(`Body: ${noteExpanded.body}`);
+  } else {
+    console.log(`could not find a note titled ${argv.title}`);
+  }
 } else if (command === 'remove') {
   let noteRemoved = notes.removeNote(argv.title);
   let message = noteRemoved ? `${argv.title} successully removed` : `note title: ${argv.title}, does not exist, cannot remove`;
