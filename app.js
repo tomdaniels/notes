@@ -8,7 +8,7 @@ const argv = yargs.argv;
 let command = argv._[0];
 
 if (command === 'add') {
-  notes.addNote(argv.title, argv.body);
+  let note = notes.addNote(argv.title, argv.body);
 } else if (command === 'list') {
   notes.getAll();
 } else if (command === 'read') {
