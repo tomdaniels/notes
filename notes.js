@@ -25,6 +25,7 @@ let addNote = (title, body) => {
   if (duplicateNote.length === 0) {
     notes.push(note);
     saveNotes(notes);
+    return note;
   }
 };
 
