@@ -16,7 +16,9 @@ if (command === 'add') {
     console.log(`there is already a note titled ${argv.title}`);
   };
 } else if (command === 'list') {
-  notes.getAll();
+  let allNotes = notes.getAll();
+  console.log(`Printing ${allNotes.length} note(s).`);
+  allNotes.forEach((note) => notes.logNote(note));
 } else if (command === 'read') {
   let note = notes.getNote(argv.title);
   if (note) {
