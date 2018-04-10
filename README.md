@@ -1,3 +1,4 @@
 # notes
 
-A little app to take a few notes, written in Node.js
+Command line interface to jot down quick notes.
+Node.js app. 
