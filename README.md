@@ -3,6 +3,13 @@
 Command line interface to jot down quick notes.
 Node.js app. 
 
+## Installing the application
+- Run the below commands:
+```bash
+    git clone git@github.com:tomdaniels/weatherize.git && cd weatherize
+    yarn install
+```
+
 ### How to use it? 
 
 - Add a note
