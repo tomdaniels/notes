@@ -5,22 +5,22 @@ Node.js app.
 
 ### How to use it? 
 
->Add a note
+- Add a note
 ```bash
 node app.js add -t {title of the note} -b {body/description}
 ```
 
->Remove a note
+- Remove a note
 ```bash
 node app.js remove -t {title of note to remove}
 ```
 
->Read a note
+- Read a note
 ```bash
 node app.js read -t {title of note to expand}
 ```
 
->list all notes
+- list all notes
 ```bash
 node app.js list
 ```
