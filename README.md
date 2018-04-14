@@ -6,7 +6,7 @@ Node.js app.
 ## Installing the application
 - Run the below commands:
 ```bash
-    git clone git@github.com:tomdaniels/notes.git && cd weatherize
+    git clone git@github.com:tomdaniels/notes.git && cd notes
     yarn install
 ```
 
